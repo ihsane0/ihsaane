@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLAMAURA</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Bacasime+Antique&family=Changa&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ce73b3;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            color: #666;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid #4CAF50;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+            border-color: #45a049;
+        }
+
+        #result {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #resultText {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logoo.png" class="logo" alt=""></a>
+        <img src="images/loggo-removebg-preview.png" alt="Logo" class="logo">
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="logic.html" target="_blank">HOME</a></li>
+                <li><a href="product.html" target="_blank">exemples de carrières</a></li>
+                <li><a href="eval.html" target="_blank">évaluation</a></li>
+                <li><a href="contact.html" target="_blank">à propos de nous</a></li>
+                <li><a href="connexion.html" target="_blank">connectez-vous</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <h1>Découvrez votre inclination</h1>
+        <p>Répondez aux questions suivantes pour découvrir si vous êtes plus porté vers les STEM (Sciences, Technologies, Ingénierie et Mathématiques), les affaires ou les arts.</p>
+        <form id="personalityTest">
+            <!-- Question sur la matière préférée à l'école -->
+            <div class="question">
+                <p>1. Quelle matière avez-vous le plus appréciée à l'école ?</p>
+                <label><input type="radio" name="q1" value="stem"> Sciences</label>
+                <label><input type="radio" name="q1" value="business"> Économie</label>
+                <label><input type="radio" name="q1" value="art"> Arts plastiques</label>
+            </div>
+            <!-- Question sur la résolution des problèmes -->
+            <div class="question">
+                <p>2. Comment préférez-vous résoudre les problèmes ?</p>
+                <label><input type="radio" name="q2" value="stem"> Par la logique</label>
+                <label><input type="radio" name="q2" value="business"> En analysant les données</label>
+                <label><input type="radio" name="q2" value="art"> Par la créativité et l'intuition</label>
+            </div>
+            <!-- Question sur les activités de temps libre -->
+            <div class="question">
+                <p>3. Quel type d'activités préférez-vous pendant votre temps libre ?</p>
+                <label><input type="radio" name="q3" value="stem"> Construire ou coder</label>
+                <label><input type="radio" name="q3" value="business"> Planifier ou organiser</label>
+                <label><input type="radio" name="q3" value="art"> Dessiner ou peindre</label>
+            </div>
+            <!-- Question sur l'approche face aux défis -->
+            <div class="question">
+                <p>4. Quelle est votre approche face à un nouveau défi ?</p>
+                <label><input type="radio" name="q4" value="stem"> Analyser et concevoir une solution</label>
+                <label><input type="radio" name="q4" value="business"> Élaborer un plan stratégique</label>
+                <label><input type="radio" name="q4" value="art"> Laisser libre cours à votre imagination</label>
+            </div>
+            <!-- Question sur les préférences de lecture -->
+            <div class="question">
+                <p>5. Quel type de livre préférez-vous lire ?</p>
+                <label><input type="radio" name="q5" value="stem"> Science-fiction</label>
+                <label><input type="radio" name="q5" value="business"> Biographies d'entrepreneurs</label>
+                <label><input type="radio" name="q5" value="art"> Romans ou poésie</label>
+            </div>
+            <!-- Question sur l'environnement de travail préféré -->
+            <div class="question">
+                <p>6. Quel genre d'environnement de travail préférez-vous ?</p>
+                <label><input type="radio" name="q6" value="stem"> Laboratoire ou bureau</label>
+                <label><input type="radio" name="q6" value="business"> Bureau d'entreprise</label>
+                <label><input type="radio" name="q6" value="art"> Studio ou espace créatif</label>
+            </div>
+            <!-- Question sur la motivation au travail -->
+            <div class="question">
+                <p>7. Qu'est-ce qui vous motive le plus dans votre travail ?</p>
+                <label><input type="radio" name="q7" value="stem"> Résoudre des problèmes complexes</label>
+                <label><input type="radio" name="q7" value="business"> Atteindre des objectifs financiers</label>
+                <label><input type="radio" name="q7" value="art"> Créer quelque chose de nouveau</label>
+            </div>
+            <!-- Question sur le style de travail -->
+            <div class="question">
+                <p>8. Comment décririez-vous votre style de travail ?</p>
+                <label><input type="radio" name="q8" value="stem"> Méthodique et systématique</label>
+                <label><input type="radio" name="q8" value="business"> Structuré et stratégique</label>
+                <label><input type="radio" name="q8" value="art"> Flexible et inspiré</label>
+            </div>
+            <!-- Question sur les types de projets préférés -->
+            <div class="question">
+                <p>9. Quel type de projet préférez-vous ?</p>
+                <label><input type="radio" name="q9" value="stem"> Projet de recherche ou développement</label>
+                <label><input type="radio" name="q9" value="business"> Lancement de nouveaux produits</label>
+                <label><input type="radio" name="q9" value="art"> Projet artistique ou créatif</label>
+            </div>
+            <!-- Question sur la prise de décisions importantes -->
+            <div class="question">
+                <p>10. Comment prenez-vous des décisions importantes ?</p>
+                <label><input type="radio" name="q10" value="stem"> En faisant des recherches approfondies</label>
+                <label><input type="radio" name="q10" value="business"> En consultant des experts et des données</label>
+                <label><input type="radio" name="q10" value="art"> En écoutant votre instinct et votre intuition</label>
+            </div>
+            <button type="button" onclick="calculateResult()">Soumettre</button>
+        </form>
+        <div id="result" style="display: none;">
+            <h2>Votre résultat</h2>
+            <p id="resultText"></p>
+        </div>
+    </div>
+    <script>
+        function calculateResult() {
+            const form = document.getElementById('personalityTest');
+            const answers = new FormData(form);
+            let stemPoints = 0;
+            let businessPoints = 0;
+            let artPoints = 0;
+
+            for (const entry of answers.entries()) {
+                const response = entry[1];
+                
+                if (response === 'stem') {
+                    stemPoints++;
+                } else if (response === 'business') {
+                    businessPoints++;
+                } else if (response === 'art') {
+                    artPoints++;
+                }
+            }
+
+            let resultText = '';
+            if (stemPoints > businessPoints && stemPoints > artPoints) {
+                resultText = 'Vous êtes porté vers les STEM.';
+            } else if (businessPoints > stemPoints && businessPoints > artPoints) {
+                resultText = 'Vous êtes porté vers les affaires.';
+            } else {
+                resultText = 'Vous êtes porté vers les arts.';
+            }
+
+            const resultDiv = document.getElementById('result');
+            const resultTextElement = document.getElementById('resultText');
+            resultTextElement.textContent = resultText;
+            resultDiv.style.display = 'block';
+
+            // Faire défiler jusqu'à la section des résultats
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
